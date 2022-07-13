@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +11,7 @@ export class PokeApiService {
   constructor(
     private http: HttpClient
   ) {
-    // this.url = 'https://workshop-nestjs-pokeapi.vercel.app';
-    this.url = 'http://localhost:3001';
+    this.url = environment.pokeApiUrl;
   }
 
 
