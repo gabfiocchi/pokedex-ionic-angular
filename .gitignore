@@ -19,7 +19,7 @@ npm-debug.log*
 
 /.angular
 /.idea
-# /.history
+/.history
 /.ionic
 /.sass-cache
 /.sourcemaps
