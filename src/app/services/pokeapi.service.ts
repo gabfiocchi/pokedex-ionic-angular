@@ -6,12 +6,16 @@ import { Injectable } from '@angular/core';
 })
 export class PokeApiService {
 
+  url: string;
   constructor(
     private http: HttpClient
-  ) { }
+  ) {
+    // this.url = 'https://workshop-nestjs-pokeapi.vercel.app';
+    this.url = 'http://localhost:3001';
+  }
 
 
   getAllPokemons() {
-    return this.http.get('https://workshop-nestjs-pokeapi.vercel.app/pokemons');
+    return this.http.get(this.url + '/pokemons');
   }
 }

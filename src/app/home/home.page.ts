@@ -18,7 +18,7 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
     this.pokeApiService.getAllPokemons().subscribe((pokemons: any) => {
-      this.pokemons = pokemons.results;
+      this.pokemons = pokemons;
     });
   }
 
